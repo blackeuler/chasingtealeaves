@@ -3,7 +3,10 @@ import {DayLayout} from './Components/DayLayout.js';
 import {Story} from './Components/Story.js'
 import './App.css';
 import scrollToComponent from 'react-scroll-to-component';
+import 'test.js'
 const contentful = require('contentful');
+
+
 
 class App extends Component {
   
@@ -46,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App ">
-        <header className="App-header center bg tc">
+        <header className="App-header falling-leaves center bg tc">
           
           <h1 className="App-title">CHASING THE TEA LEAVES:</h1>
           <h1 className="App-title">MY JOURNEY EAST</h1>

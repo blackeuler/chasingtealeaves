@@ -26,7 +26,7 @@ export const DayLayout = ({posts, onClickDay}) =>{
     
     return(
         
-        <div className="flex  flex-wrap pa4 justify-center">
+        <div className="flex days flex-wrap items-center justify-center">
             {days}
         </div>
     )
