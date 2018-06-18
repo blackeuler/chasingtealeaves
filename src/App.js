@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {DayLayout} from './Components/DayLayout.js';
 import {Story} from './Components/Story.js'
 import './App.css';
+import scrollToComponent from 'react-scroll-to-component';
 const contentful = require('contentful');
 
 class App extends Component {
@@ -35,6 +36,11 @@ class App extends Component {
     this.setState({
       story:event.currentTarget.id
     })
+    scrollToComponent(this.Blue,{
+      offset:200,
+      align:'top',
+      duration:1500
+    });
   }
 
   render() {
@@ -47,7 +53,9 @@ class App extends Component {
         </header>
         
         <DayLayout onClickDay={this.onClickDay} posts = {this.state.posts}/>
-        <Story story={this.state.story} posts = {this.state.posts}/>  
+        <section ref={(section) => { this.Blue = section; }}>
+          <Story  story={this.state.story} posts = {this.state.posts}/>  
+        </section>
       </div>
     );
   }
