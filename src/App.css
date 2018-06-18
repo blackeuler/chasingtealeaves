@@ -1,14 +1,17 @@
 .bg{
   /* The image used */
-  background-image: url();
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  =
+    
+    width: 100%;
+    max-width: 880px;
+    transform: translate(0, 0);
+    border: 20px solid #fff;
+    border-radius: 50px;
+    background: url(http://sarahmhigley.com/static/images/sidebar-bg.png) no-repeat center center;
+    background-size: cover;
+    
 }
 
-
+.days{
+  transform:translate(-80%,0);
+}
