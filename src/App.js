@@ -3,7 +3,7 @@ import {DayLayout} from './Components/DayLayout.js';
 import {Story} from './Components/Story.js'
 import './App.css';
 import scrollToComponent from 'react-scroll-to-component';
-import 'test.js'
+
 const contentful = require('contentful');
 
 
