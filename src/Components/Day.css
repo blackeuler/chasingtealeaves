@@ -6,3 +6,10 @@
     background-position: 50% 50%;
         
 } 
+.hover-bg-dark-red{
+    
+    background-color:#FCF1D0 !important;
+}
+.yellow{
+    color: #422130;
+}
