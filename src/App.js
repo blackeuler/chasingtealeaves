@@ -12,7 +12,7 @@ class App extends Component {
   
   state = {
     posts: [],
-    story:null,
+    story:0,
   }
   
 
@@ -49,12 +49,6 @@ class App extends Component {
   render() {
     return (
       <div className="App ">
-        <header className="App-header falling-leaves center bg tc">
-          
-          <h1 className="App-title">CHASING THE TEA LEAVES:</h1>
-          <h1 className="App-title">MY JOURNEY EAST</h1>
-        </header>
-        
         <DayLayout className='days' onClickDay={this.onClickDay} posts = {this.state.posts}/>
         <section ref={(section) => { this.Blue = section; }}>
           <Story  story={this.state.story} posts = {this.state.posts}/>  
