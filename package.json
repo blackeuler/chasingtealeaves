@@ -2,7 +2,7 @@
   "name": "chasingtealeaves",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://miller365.github.io/chasingtealeaves",
+  "homepage": "",
   "dependencies": {
     "buttercms": "^1.1.1",
     "contentful": "^6.1.1",
